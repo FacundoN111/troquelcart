@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.menu {
+    background-image: -webkit-linear-gradient(105deg, rgb(37, 34, 179) 39%, rgba(51,56,57,1) 96%);
+    list-style: none;
+    padding-top: 7rem;
+    position: sticky;
+    top: 0;
+}
+
+
+.menu_item {
+        display: inline-block;
+        margin-right: 1rem;
+        padding: 1rem;
+        
+        
+}
+
+.menu_item a {
+    color: white;
+    text-decoration: none;
+    border-width: 1px; 
+    border-style: solid;
+    border-color: white;
+    border-bottom: 2px;
+    
+    
+}
+
+.wpp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+}
+
+.logotr {
+    width: 15rem;
+    position: absolute;
+    left: 32rem;
+    top: .5rem;
+}
+
+.logor {
+    width: 20px;
+    margin-left: 1rem;
+    }
+
+.inst {
+    position: absolute;
+    left: 65rem;
+    top: 7.9rem;
+}
+
+.face  {
+    position: absolute;
+    left: 67rem;
+    top: 7.9rem;
+}
+
+.what  {
+    position: absolute;
+    left: 69rem;
+    top: 7.9rem;
+}
+
+.cliente {
+position: absolute;
+left: 75rem;
+top: 7.9rem;
+}
+
+.fondoi {
+    position: absolute;
+    left: 1rem;
+    top: 13rem;
+    color: rgb(240, 160, 12);
+   }
+
+.calidad {
+    padding: .5rem;
+    background-color: green; 
+    width: 15rem;
+    position: absolute;
+    left: 17rem;
+    top: 23rem;
+    
+}
+
+.puntualidad {
+    padding: .5rem;
+    background-color: orange; 
+    width: 15rem;
+    position: absolute;
+    left: 17rem;
+    top: 28rem;
+}
+
+.envios {
+    padding: .5rem;
+    background-color: red; 
+    width: 15rem;
+    position: absolute;
+    left: 17rem;
+    top: 33rem;
+}
+
+.troquei {
+    padding: .5rem;
+    width: 30rem;
+    position: absolute;
+    left: 40rem;
+    top: 19.5rem;
+}
+
+.contactoi {
+    background-image: -webkit-linear-gradient(105deg, rgb(37, 34, 179) 39%, rgba(51,56,57,1) 96%);
+    padding-top: 7rem;
+    margin: 0;
+    padding: 0;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    
+    }
+
+.contacto {
+    list-style: none;
+    margin-left: 5rem;
+    line-height: 2rem;
+}
+
+.cont {
+    margin: 1rem;
+}
+
+.imgcont {
+    position: absolute;
+    left: 5rem;
+    top: 80rem;
+}
+
+.imgl {
+    width: 1rem;
+    position: absolute;
+    left: -1.5rem;
+    top: -5.3rem;
+}
+.imgt {
+    width: 1rem;
+    position: absolute;
+    left: -1.5rem;
+    top: -3.1rem;
+}
+.imgm {
+    width: 1.5rem;
+    position: absolute;
+    left: -1.6rem;
+    top: -1.3rem;
+}
+.imgh {
+    width: 1.2rem;
+    position: absolute;
+    left: -1.5rem;
+    top: 0.8rem;
+}
+
+.nuestroscli {
+    position: absolute;
+    left: 60rem;
+    top: 72.1rem;
+}
+
+.cuadradonc1 {
+    width: 2rem;
+    height: 2rem;
+    background-color: slategray;
+    border: 1px; 
+    position: absolute;
+    left: 60rem;
+    top: 75rem;
+}
+
+.cuadradonc2 {
+    width: 2rem;
+    height: 2rem;
+    background-color: slategray;
+    border: 1px; 
+    position: absolute;
+    left: 65rem;
+    top: 75rem;
+}
+   
+.cuadradonc3 {
+    width: 2rem;
+    height: 2rem;
+    background-color: slategray;
+    border: 1px; 
+    position: absolute;
+    left: 70rem;
+    top: 75rem;
+}
+
+.cuadradonc4 {
+    width: 2rem;
+    height: 2rem;
+    background-color: slategray;
+    border: 1px; 
+    position: absolute;
+    left: 60rem;
+    top: 80rem;
+}
+
+.cuadradonc5 {
+    width: 2rem;
+    height: 2rem;
+    background-color: slategray;
+    border: 1px; 
+    position: absolute;
+    left: 65rem;
+    top: 80rem;
+}
+
+.cuadradonc6 {
+    width: 2rem;
+    height: 2rem;
+    background-color: slategray;
+    border: 1px; 
+    position: absolute;
+    left: 70rem;
+    top: 80rem;
+}
+
+
+/* quienes somos */
+
+.cuadfondo {
+    width: 100%;
+    height: 60rem;
+    background-color: rgb(178, 214, 250);
+    border: 1px; 
+    
+}
+
+.quisom {
+    color: black;
+}
+
+.texto1 {
+    top: 15rem;
+    left: 5.4rem;
+}
+
+.texto2 {
+    top: 16rem;
+    left: 5.4rem;
+}
+
+.historia {
+    padding: 1rem;
+    background-color: rgb(158, 186, 236); 
+    width: 18rem;
+    position: absolute;
+    left: 17rem;
+    top: 25rem;
+}
+
+.historia1 {
+    padding: 1rem;
+    background-color: rgb(158, 186, 236); 
+    width: 18rem;
+    position: absolute;
+    left: 17rem;
+    top: 32rem;
+}
+
+/* productos */
+
+.producto {
+    width: 20%;
+    background-color: rgb(158, 186, 236);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-inline: 1.5%;
+    overflow: auto;
+    margin-block: 1rem;
+    position: absolute;
+    bottom: -7rem;
+    left: 7rem;
+}
+
+.producto1_imagen {
+    width: 100%;
+}
+
+.producto1_titulo{
+    font-size: 18px;
+}
+
+.producto1_parrafo {
+    font-size: 14px;
+}
+
+.producto1_boton {
+    background-color: rgb(67, 67, 240);
+    border: none;
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+}
+
+.producto1_imagen, 
+.producto1_titulo, 
+.producto1_parrafo, 
+.producto1_boton {
+    margin-bottom: 0.3rem;
+}
+
+.producto2 {
+    left: 24rem;
+    padding-top: 3rem;
+}
+
+.producto3 {
+    left: 41rem;
+    padding-top: 3rem;
+}
+
+.producto4 {
+    left: 58rem;
+    padding-top: 4rem;
+}
+
+.producto5 {
+    left: 7rem;
+    bottom: -39.5rem;
+}
+
+.producto6 {
+    left: 24rem;
+    bottom: -39.5rem;
+}
+
+.producto7 {
+    left: 41rem;
+    bottom: -39.5rem;
+}
+
+.producto8 {
+    left: 58rem;
+    bottom: -39.5rem;
+    padding-top: 5.6rem;
+}
+
+.fondo_productos {
+    height: 75rem;
+}
+
+.img_c_productos {
+    top:94.6rem;
+}
+
+.cuadrado_nc_productos {
+    top: 90rem;
+}
+
+.cuadrado_nc_productos1 {
+    top: 94rem;
+}
+
+.nc_productos {
+    top: 86.6rem;
+}
+
+
+/* Procesos y servicios */
+
+.ul_procesos {
+    position: absolute;
+    margin: 15rem;
+    top: 3rem;
+    font-size: 1.2rem;
+    padding: 2rem;
+    background-color: rgb(158, 186, 236);
+    border-radius: 1rem;
+}
+
+.titulo2_procesos {
+    top:27rem;
+    margin: 5rem;
+    font-size: 1.2rem;
+}
+
+.img_pegadora {
+    width: 30rem;
+    margin: 8rem;
+    position: absolute;
+    top: 28rem;
+}
+
+.img_troqueladora1 {
+    width: 14rem;
+    margin: 8rem;
+    position: absolute;
+    top: 28rem;
+    left: 32.1rem;
+}
+
+.img_troqueladora2 {
+    width: 17.2rem;
+    margin: 8rem;
+    position: absolute;
+    top: 28rem;
+    left: 48.2rem;
+}
+
+.img_materiales {
+    width: 15rem;
+    margin: 8rem;
+    position: absolute;
+    top: 43rem;
+    left: 15rem;
+}
+
+.img_fabrica {
+    width: 23.6rem;
+    margin: 8rem;
+    position: absolute;
+    top: 43rem;
+    left: 32rem;
+}
+
+
+/* contacto */
+
+.contacto_pa{
+    padding: 3rem;
+}
+
+.contacto_c {
+    font-size: 1.2rem;
+    background-color: rgb(158, 186, 236);
+    position: absolute;
+    list-style: none;
+    margin-left: 7rem;
+    top: 9rem;
+    line-height: 5rem;
+}
+
+.img_l_c,
+.img_t_c,
+.img_m_c,
+.img_h_c {
+    width: 2rem;
+    position: absolute;
+    margin: 13rem;
+    top: 9rem;
+}
+ .img_t_c {
+    top: 14.5rem;
+ }
+
+ .img_m_c{
+    width: 2.7rem;
+    top: 19rem;
+ }
+
+ .img_h_c {
+    top: 24.5rem;
+ }
+
+ .cuadrado_contacto {
+    width: 25rem;
+    height: 27rem;
+    background-color: rgb(158, 186, 236);
+    position: absolute;
+    margin-left: 7rem;
+    top: 17.3rem;
+ }
+
+ .registro {
+    width: 16rem;
+    position: absolute;
+    
+  
+ }
+
+.nombre {
+    margin: 50%;
+    top: -16.6rem;
+    
+}
+
+.telefono {
+    margin:50%;
+    top: -11.7rem;
+}
+
+.mail {
+    margin: 50%;
+    top: -6.7rem;
+}
+
+.comentario {
+    margin: 75%;
+    top: -36.3rem;
+    height: 11.1rem;
+}
+
+.boton {
+    position: absolute;
+    margin: 50%;
+    top: -1.6rem;
+}
+
+.cuadrado_contacto2 {
+    width: 39.5rem;
+    height: 27rem;
+    background-color: rgb(158, 186, 236);
+    position: absolute;
+    margin-left: 48%;
+    top: 17.3rem;
+}
+
+.formulario {
+    position: absolute;
+    margin: 50%;
+    top: -20rem;
+    
+
+}
+
+
