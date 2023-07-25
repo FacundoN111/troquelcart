@@ -7,32 +7,64 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+
+
+/* header */
+
+
 .menu {
     background-image: -webkit-linear-gradient(105deg, rgb(37, 34, 179) 39%, rgba(51,56,57,1) 96%);
-    list-style: none;
-    padding-top: 7rem;
-    position: sticky;
-    top: 0;
+    padding-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center
+    
 }
 
+.menu_i {
+    list-style: none;
+    padding: .5rem;
+    display: flex;
+    gap: 1rem;
+    
+}
 
 .menu_item {
-        display: inline-block;
-        margin-right: 1rem;
-        padding: 1rem;
-        
-        
 }
 
 .menu_item a {
     color: white;
     text-decoration: none;
-    border-width: 1px; 
+    padding: .1rem;
+    border-width: .01rem; 
     border-style: solid;
     border-color: white;
-    border-bottom: 2px;
+    border-bottom: 0;
     
+}
+
+.menu_item a:hover {
+    color: rgb(152, 222, 240);
+    transition: .05s;
+}
+
+.logos {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: start;
+    padding-right: 1rem;
     
+}
+
+.logor {
+    width: 1.1rem;
+}
+
+.logor:hover {
+    filter: brightness(150%);
+    transition: .05s;
 }
 
 .wpp {
@@ -43,83 +75,104 @@
 }
 
 .logotr {
-    width: 15rem;
+    width: 13rem;
     position: absolute;
     left: 32rem;
     top: .5rem;
 }
 
-.logor {
-    width: 20px;
-    margin-left: 1rem;
-    }
 
-.inst {
-    position: absolute;
-    left: 65rem;
-    top: 7.9rem;
+
+
+/* Inicio */
+
+
+.carousel-inner {
+    height: 15rem;
+    width: 100%;
 }
 
-.face  {
-    position: absolute;
-    left: 67rem;
-    top: 7.9rem;
-}
-
-.what  {
-    position: absolute;
-    left: 69rem;
-    top: 7.9rem;
-}
-
-.cliente {
-position: absolute;
-left: 75rem;
-top: 7.9rem;
-}
 
 .fondoi {
-    position: absolute;
-    left: 1rem;
-    top: 13rem;
-    color: rgb(240, 160, 12);
-   }
+    background-image: url(../img/fondoinicio.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    color: rgb(253, 195, 5);
+}
+
+.fondoi h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    
+}
+
+.texto1 {
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+
+.texto2 {
+    padding-left: 3rem;
+}
+
+.card_inicio {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 11rem;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.card_inicio h5 {
+    font-weight: bold;
+}
+
+.card {
+    width: 100%;
+}
 
 .calidad {
     padding: .5rem;
     background-color: green; 
     width: 15rem;
-    position: absolute;
-    left: 17rem;
-    top: 23rem;
-    
-}
+    }
 
 .puntualidad {
     padding: .5rem;
     background-color: orange; 
     width: 15rem;
-    position: absolute;
-    left: 17rem;
-    top: 28rem;
+    
 }
 
 .envios {
     padding: .5rem;
     background-color: red; 
     width: 15rem;
-    position: absolute;
-    left: 17rem;
-    top: 33rem;
+    
 }
 
-.troquei {
-    padding: .5rem;
-    width: 30rem;
-    position: absolute;
-    left: 40rem;
-    top: 19.5rem;
+.card_img {
+    padding-left: 2.5rem;
+    display: flex;
+    width: 100%;
+
+
 }
+.troquei {
+    width: 50%;
+    padding-left: 8rem;
+    padding-top: 4rem;
+}
+
+
+
+/* footer */
+
 
 .contactoi {
     background-image: -webkit-linear-gradient(105deg, rgb(37, 34, 179) 39%, rgba(51,56,57,1) 96%);
@@ -128,8 +181,10 @@ top: 7.9rem;
     padding: 0;
     padding-top: .5rem;
     padding-bottom: .5rem;
-    
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .contacto {
     list-style: none;
@@ -144,7 +199,7 @@ top: 7.9rem;
 .imgcont {
     position: absolute;
     left: 5rem;
-    top: 80rem;
+    top: 75.9rem;
 }
 
 .imgl {
@@ -172,133 +227,150 @@ top: 7.9rem;
     top: 0.8rem;
 }
 
-.nuestroscli {
-    position: absolute;
-    left: 60rem;
-    top: 72.1rem;
+.nuestros_clientes {
+    padding-right: 1rem;
 }
 
-.cuadradonc1 {
-    width: 2rem;
-    height: 2rem;
-    background-color: slategray;
-    border: 1px; 
-    position: absolute;
-    left: 60rem;
-    top: 75rem;
-}
-
-.cuadradonc2 {
-    width: 2rem;
-    height: 2rem;
-    background-color: slategray;
-    border: 1px; 
-    position: absolute;
-    left: 65rem;
-    top: 75rem;
-}
+.img_clientes {
+   margin-left: 3rem; 
+   padding-top: 1rem;
+   display: flex;
+   gap: 1rem;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
    
-.cuadradonc3 {
+}
+    
+
+.img {
     width: 2rem;
-    height: 2rem;
-    background-color: slategray;
-    border: 1px; 
-    position: absolute;
-    left: 70rem;
-    top: 75rem;
 }
 
-.cuadradonc4 {
-    width: 2rem;
-    height: 2rem;
-    background-color: slategray;
-    border: 1px; 
-    position: absolute;
-    left: 60rem;
-    top: 80rem;
-}
-
-.cuadradonc5 {
-    width: 2rem;
-    height: 2rem;
-    background-color: slategray;
-    border: 1px; 
-    position: absolute;
-    left: 65rem;
-    top: 80rem;
-}
-
-.cuadradonc6 {
-    width: 2rem;
-    height: 2rem;
-    background-color: slategray;
-    border: 1px; 
-    position: absolute;
-    left: 70rem;
-    top: 80rem;
-}
 
 
 /* quienes somos */
 
-.cuadfondo {
-    width: 100%;
-    height: 60rem;
+.main {
     background-color: rgb(178, 214, 250);
-    border: 1px; 
+    height: 110vh;
+}
+
+
+.quienes_somos {
+    padding-top: 3rem;
+    padding-left: 4.3rem;
+    display: flex;
+    flex-direction: column;
     
 }
 
 .quisom {
     color: black;
+    padding-bottom: 1rem;
+    
 }
 
-.texto1 {
-    top: 15rem;
-    left: 5.4rem;
+.texto {
+    color: rgb(253, 195, 5);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    padding-left: 3rem;
+    padding-top: .5rem;
+    -webkit-text-stroke: .03rem black
+    
 }
 
-.texto2 {
-    top: 16rem;
-    left: 5.4rem;
+.historia_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
 }
 
-.historia {
-    padding: 1rem;
+.historias {
     background-color: rgb(158, 186, 236); 
     width: 18rem;
-    position: absolute;
-    left: 17rem;
-    top: 25rem;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+   
 }
 
-.historia1 {
-    padding: 1rem;
-    background-color: rgb(158, 186, 236); 
-    width: 18rem;
-    position: absolute;
-    left: 17rem;
-    top: 32rem;
+.troquei {
+    width: 30rem;
+    margin-bottom: 1rem;
+       
+}   
+
+.imgcont_quienes_somos {
+    top: 62.8rem;
+    
 }
+
+
 
 /* productos */
 
-.producto {
-    width: 20%;
-    background-color: rgb(158, 186, 236);
-    padding: 1rem;
-    border-radius: 1rem;
-    display: inline-block;
-    margin-inline: 1.5%;
-    overflow: auto;
-    margin-block: 1rem;
-    position: absolute;
-    bottom: -7rem;
-    left: 7rem;
+.main_productos {
+    height: 185vh;
 }
 
-.producto1_imagen {
+.productos {
+    padding-top: 3.5rem;
+    margin-left: 3.5rem;
+}
+
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: 9.5rem;
+    
+}
+
+
+.producto {
+    background-color: rgb(158, 186, 236);
+    padding: 2rem;
+    width: 15rem;
+    height: 30rem;
+    border-radius: 1rem;
+    display: inline-block; 
+    margin-left: 3.5rem;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    
+    
+}
+
+.item {
+    margin-left: 1rem;
+    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    
+}
+
+.img_productos {
     width: 100%;
+    
+}
+
+.producto1_boton {
+    background-color: rgb(67, 67, 240);
+    border: none;
+    padding: 0.2rem;
+    border-radius: 0.3rem;
 }
 
 .producto1_titulo{
@@ -309,83 +381,24 @@ top: 7.9rem;
     font-size: 14px;
 }
 
-.producto1_boton {
-    background-color: rgb(67, 67, 240);
-    border: none;
-    padding: 0.2rem;
-    border-radius: 0.3rem;
+.imgcont_productos {
+    top: 93.6rem;
 }
 
-.producto1_imagen, 
-.producto1_titulo, 
-.producto1_parrafo, 
-.producto1_boton {
-    margin-bottom: 0.3rem;
-}
 
-.producto2 {
-    left: 24rem;
-    padding-top: 3rem;
-}
-
-.producto3 {
-    left: 41rem;
-    padding-top: 3rem;
-}
-
-.producto4 {
-    left: 58rem;
-    padding-top: 4rem;
-}
-
-.producto5 {
-    left: 7rem;
-    bottom: -39.5rem;
-}
-
-.producto6 {
-    left: 24rem;
-    bottom: -39.5rem;
-}
-
-.producto7 {
-    left: 41rem;
-    bottom: -39.5rem;
-}
-
-.producto8 {
-    left: 58rem;
-    bottom: -39.5rem;
-    padding-top: 5.6rem;
-}
-
-.fondo_productos {
-    height: 75rem;
-}
-
-.img_c_productos {
-    top:94.6rem;
-}
-
-.cuadrado_nc_productos {
-    top: 90rem;
-}
-
-.cuadrado_nc_productos1 {
-    top: 94rem;
-}
-
-.nc_productos {
-    top: 86.6rem;
-}
 
 
 /* Procesos y servicios */
 
+.main_procesos {
+    height: 143vh;
+}
+
 .ul_procesos {
-    position: absolute;
-    margin: 15rem;
-    top: 3rem;
+    width: 35rem;
+    height: 10rem;
+    margin-left: 25%;
+    margin-top: 3rem;
     font-size: 1.2rem;
     padding: 2rem;
     background-color: rgb(158, 186, 236);
@@ -435,7 +448,13 @@ top: 7.9rem;
     position: absolute;
     top: 43rem;
     left: 32rem;
+
 }
+
+.imgcont_procesos {
+    top: 76.4rem;
+}
+
 
 
 /* contacto */
@@ -533,8 +552,15 @@ top: 7.9rem;
     position: absolute;
     margin: 50%;
     top: -20rem;
-    
 
+  
+
+}
+
+
+.imgcont_contacto{
+    top: 62.8rem;
+    
 }
 
 
