@@ -10,11 +10,18 @@
 
 <body>
     
-    <header>
+    <header class="header">
         
-    
+        <img class="logotr" src="../img/Troquelcart.png" alt="troquelcart">
+
+        
         <nav class="menu"> 
-                <ul class="menu_i"> 
+
+            <button class="open-menu" id="open-menu"><i class="fa-solid fa-bars"></i></button>
+            
+                <ul class="menu_i" id="menu_i"> 
+                    <button class="close-menu" id="close-menu"><i class="bi bi-x-circle-fill"></i></button>
+            
                     <li class="menu_item">
                        <a href="../index.html">inicio</a></li>
                     <li class="menu_item">
@@ -32,15 +39,16 @@
                     <img class="logor face" src="../img/logos/Face.png" alt="">
                     <img class="logor what" src="../img/logos/whatsapp_logo.png" alt="">
                     <img class="logor cliente" src="../img/logos/Clientes.png" alt="">
-             </div>
+                </div>
 
                 
         </nav>
          
-        <img class="logotr" src="../img/Troquelcart.png" alt="troquelcart">
-        
         
     </header>
+
+
+
     
     <main class="main">
 
@@ -57,13 +65,13 @@
                 
                 <article class="historias">
 
-                    <p class="historia">Somos una empresa que se destaca por 
+                    <p class="historia historia0">Somos una empresa que se destaca por 
                     la atencion personalizada hacia nuestros 
                     clientes. Con mas de 20 años en el rubro, 
                     contamos con personal altamente
                     capacitado.
                     </p>
-                    <p class="historia1">Todo lo que realizamos es a medida de 
+                    <p class="historia1 historia0">Todo lo que realizamos es a medida de 
                     cada cliente, ningun trabajo es igual al 
                     otro, de ahi el desafio que siempre 
                     estemos atentos a las necesidades
@@ -87,31 +95,38 @@
     </main>    
 
 
-
-
     <footer>
 
         
         <nav class="contactoi">
-            <div>
-                <h3 class="cont">contacto:</h3>
-                <ul class="contacto">
-                    <li>Blas Parera 777, Ituzaingó, Provincia de Buenos Aires</li>
-                    <li> +54 9 11 61594255</li>
-                    <li>Troquelcart@gmail.com</li>
-                    <li>Lunes a Viernes: 8:00 am / 21:00 hs</li>
-                </ul>
+            
+            <div class="contacto-footer">
 
-                <div class="imgcont imgcont_quienes_somos">
-                    <img class="imgl" src="../img/logos/Localidad.png" alt="loc">
-                    <img class="imgt" src="../img/logos/tel.png" alt="tel">
-                    <img class="imgm" src="../img/logos/mail.png" alt="mail">
-                    <img class="imgh" src="../img/logos/horario.png" alt="horarios">
+                <h3 class="cont">contacto:</h3>
+                <div class="contactos-img contactos-img-quienessomos">
+                    <ul class="contacto">
+                        <li>Blas Parera 777, Ituzaingó, Provincia de Buenos Aires</li>
+                        <li> +54 9 11 61594255</li>
+                        <li>Troquelcart@gmail.com</li>
+                        <li>Lunes a Viernes: 8:00 am / 21:00 hs</li>
+                    </ul>
+
+                    <div class="imgcont imgcont-quienessomos">
+                        <img class="imgl" src="../img/logos/Localidad.png" alt="loc">
+                        <img class="imgt" src="../img/logos/tel.png" alt="tel">
+                        <img class="imgm" src="../img/logos/mail.png" alt="mail">
+                        <img class="imgh" src="../img/logos/horario.png" alt="horarios">
+                    </div>
+
                 </div>
+
+
             </div>
+
+
             <div class="nuestros_clientes">
                 <h3 class="nuestroscli">Nuestros clientes:</h3>
-                <div class="img_clientes">
+                <div class="img_clientes img-clientes-quienessomos">
                     <img class="img" src="../img/nuestros clientes/cliente1.png" alt="cliente1">
                     <img class="img" src="../img/nuestros clientes/cliente2.png" alt="cliente2">
                     <img class="img" src="../img/nuestros clientes/cliente3.png" alt="cliente3">
@@ -119,17 +134,25 @@
                     <img class="img" src="../img/nuestros clientes/cliente5.png" alt="cliente5">
                     <img class="img" src="../img/nuestros clientes/cliente6.png" alt="cliente6">
             </div>
+
         </nav>    
         
+     
+         
+    
+
     </footer>
+
     
     
+    
 
 
 
 
 
 
+    <script src="../js/main.js"></script>
 
     
 </body>

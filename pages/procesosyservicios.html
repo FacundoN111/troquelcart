@@ -10,11 +10,18 @@
 
 <body>
 
-    <header>
+    <header class="header">
         
-    
+        <img class="logotr" src="../img/Troquelcart.png" alt="troquelcart">
+
+        
         <nav class="menu"> 
-                <ul class="menu_i"> 
+
+            <button class="open-menu" id="open-menu"><i class="fa-solid fa-bars"></i></button>
+            
+                <ul class="menu_i" id="menu_i"> 
+                    <button class="close-menu" id="close-menu"><i class="bi bi-x-circle-fill"></i></button>
+            
                     <li class="menu_item">
                        <a href="../index.html">inicio</a></li>
                     <li class="menu_item">
@@ -32,13 +39,11 @@
                     <img class="logor face" src="../img/logos/Face.png" alt="">
                     <img class="logor what" src="../img/logos/whatsapp_logo.png" alt="">
                     <img class="logor cliente" src="../img/logos/Clientes.png" alt="">
-             </div>
+                </div>
 
                 
         </nav>
          
-        <img class="logotr" src="../img/Troquelcart.png" alt="troquelcart">
-        
         
     </header>
 
@@ -58,11 +63,13 @@
             </div>
             <div>
                 <h4 class="quisom titulo2_procesos">Nuestros equipos</h4>
-                <img class="img_pegadora" src="../img/Maquinas/pegadora.jpg" alt="pegadora">
-                <img class="img_troqueladora1" src="../img/Maquinas/troqueladora1.jpg" alt="troqueladora1">
-                <img class="img_troqueladora2" src="../img/Maquinas/troqueladora2.jpg" alt="troqueladora2">
-                <img class="img_materiales" src="../img/Maquinas/materiales.jpg" alt="materiales">
-                <img class="img_fabrica" src="../img/Maquinas/fabrica.png" alt="fabrica">
+                <div class="img-procesos">
+                    <img class="img_pegadora" src="../img/Maquinas/pegadora.jpg" alt="pegadora">
+                    <img class="img_troqueladora1" src="../img/Maquinas/troqueladora1.jpg"  alt="troqueladora1">
+                    <img class="img_troqueladora2" src="../img/Maquinas/troqueladora2.jpg"  alt="troqueladora2">
+                    <img class="img_materiales" src="../img/Maquinas/materiales.jpg" alt="materiales">
+                    <img class="img_fabrica" src="../img/Maquinas/fabrica.png" alt="fabrica">
+                </div>
             </div>
 
         </div>
@@ -73,25 +80,34 @@
 
         
         <nav class="contactoi">
-            <div>
-                <h3 class="cont">contacto:</h3>
-                <ul class="contacto">
-                    <li>Blas Parera 777, Ituzaingó, Provincia de Buenos Aires</li>
-                    <li> +54 9 11 61594255</li>
-                    <li>Troquelcart@gmail.com</li>
-                    <li>Lunes a Viernes: 8:00 am / 21:00 hs</li>
-                </ul>
+            
+            <div class="contacto-footer">
 
-                <div class="imgcont imgcont_procesos">
-                    <img class="imgl" src="../img/logos/Localidad.png" alt="loc">
-                    <img class="imgt" src="../img/logos/tel.png" alt="tel">
-                    <img class="imgm" src="../img/logos/mail.png" alt="mail">
-                    <img class="imgh" src="../img/logos/horario.png" alt="horarios">
+                <h3 class="cont">contacto:</h3>
+                <div class="contactos-img contactos-img-quienessomos">
+                    <ul class="contacto">
+                        <li>Blas Parera 777, Ituzaingó, Provincia de Buenos Aires</li>
+                        <li> +54 9 11 61594255</li>
+                        <li>Troquelcart@gmail.com</li>
+                        <li>Lunes a Viernes: 8:00 am / 21:00 hs</li>
+                    </ul>
+
+                    <div class="imgcont imgcont-quienessomos">
+                        <img class="imgl" src="../img/logos/Localidad.png" alt="loc">
+                        <img class="imgt" src="../img/logos/tel.png" alt="tel">
+                        <img class="imgm" src="../img/logos/mail.png" alt="mail">
+                        <img class="imgh" src="../img/logos/horario.png" alt="horarios">
+                    </div>
+
                 </div>
+
+
             </div>
+
+
             <div class="nuestros_clientes">
                 <h3 class="nuestroscli">Nuestros clientes:</h3>
-                <div class="img_clientes">
+                <div class="img_clientes img-clientes-quienessomos">
                     <img class="img" src="../img/nuestros clientes/cliente1.png" alt="cliente1">
                     <img class="img" src="../img/nuestros clientes/cliente2.png" alt="cliente2">
                     <img class="img" src="../img/nuestros clientes/cliente3.png" alt="cliente3">
@@ -99,9 +115,21 @@
                     <img class="img" src="../img/nuestros clientes/cliente5.png" alt="cliente5">
                     <img class="img" src="../img/nuestros clientes/cliente6.png" alt="cliente6">
             </div>
+
         </nav>    
         
+     
+         
+    
+
     </footer>
+
+    
+    
+    
+
+
+    <script src="../js/main.js"></script>
 
     
 

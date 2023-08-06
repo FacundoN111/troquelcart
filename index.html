@@ -11,11 +11,19 @@
 
 
 <body>
-    <header>
+
+    <header class="header">
         
-    
+        <img class="logotr" src="./img/Troquelcart.png" alt="troquelcart">
+
+        
         <nav class="menu"> 
-                <ul class="menu_i"> 
+
+            <button class="open-menu" id="open-menu"><i class="fa-solid fa-bars"></i></button>
+            
+                <ul class="menu_i" id="menu_i"> 
+                    <button class="close-menu" id="close-menu"><i class="bi bi-x-circle-fill"></i></button>
+            
                     <li class="menu_item">
                        <a href="./index.html">inicio</a></li>
                     <li class="menu_item">
@@ -33,59 +41,64 @@
                     <img class="logor face" src="./img/logos/Face.png" alt="">
                     <img class="logor what" src="./img/logos/whatsapp_logo.png" alt="">
                     <img class="logor cliente" src="./img/logos/Clientes.png" alt="">
-             </div>
+                </div>
 
                 
         </nav>
          
-        <img class="logotr" src="./img/Troquelcart.png" alt="troquelcart">
-        
         
     </header>
 
-    <main>
+
+
+    <main class="main-inicio">
 
         <img class="wpp" src="./img/logos/whatsapp_logo.png" alt="whatsapp">
 
-        <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade"   data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="4000">
-                <img src="./img/Carrusel/carrusel0.jpeg" class="d-block w-100" alt="Oficina">
-              </div>
-              <div class="carousel-item" data-bs-interval="4000">
-                <img src="./img/Carrusel/carrusel1.jpg" class="d-block w-100" alt="Fabrica">
-              </div>
-              <div class="carousel-item" data-bs-interval="4000">
-                <img src="./img/Carrusel/carrusel2.jpg" class="d-block w-100" alt="Troqueladora">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        
 
         <div class="fondoi">
-            <h3 class="texto1">Somos una empresa dedicada a los troquelados y pegados de primera calidad.</h3>
-            <h3 class="texto2">Nos basamos en emplear productos de primera calidad y fabricacion de packaging</h3>
+            
+            <section class="titulo-carousel">
+                <div class="titulo">
+                    <h3 class="texto1 titulo-inicio">Somos una empresa dedicada a los troquelados y pegados de primera calidad.</h3>
+                    <h3 class="texto2 titulo-inicio">Nos basamos en emplear productos de primera calidad y fabricacion de packaging</h3>
+                </div>
+
+                <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade            carousel-inicio"   data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3750">
+                        <img src="./img/Carrusel/carrusel0.png" class="d-block w-100" alt="Oficina">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3750">
+                        <img src="./img/Carrusel/carrusel1.jpg" class="d-block w-100" alt="Fabrica">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3750">
+                        <img src="./img/Carrusel/carrusel2.jpg" class="d-block w-100" alt="Troqueladora">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3750">
+                        <img src="./img/Carrusel/carrusel3.png" class="d-block w-100" alt="Oficinas">
+                    </div>
+                
+                </div>
+
+            </section> 
+
+            
 
             <div class="card_img">   
-                <section class="card_inicio">
+                <section class="card_inicio cards">
                     <article class="calidad card">
-                        <h5>Calidad</h5>
-                        <p>Contamos con las mejores troqueladoras y pegadoras automaticas.</p>
+                        <h5 class="card-titulos">Calidad</h5>
+                        <p class="card-texto">Contamos con las mejores troqueladoras y pegadoras automaticas.</p>
                     </article>
                     <article class="puntualidad card">
-                     <h5>Puntualidad</h5>
-                        <p>Entregamos en tiempo y forma todos nuestros trabajos.</p>
+                     <h5 class="card-titulos">Puntualidad</h5>
+                        <p class="card-texto">Entregamos en tiempo y forma todos nuestros trabajos.</p>
                     </article>
                     <article class="envios card">
-                        <h5>Envios</h5>
-                        <p>Contamos con envios a todo el pais, no dude en consultar.</p>
+                        <h class="card-titulos">Envios</h5>
+                        <p class="card-texto">Contamos con envios a todo el pais, no dude en consultar.</p>
                      </article>
                 </section>
 
@@ -104,22 +117,31 @@
 
         
             <nav class="contactoi">
-                <div>
-                    <h3 class="cont">contacto:</h3>
-                    <ul class="contacto">
-                        <li>Blas Parera 777, Ituzaingó, Provincia de Buenos Aires</li>
-                        <li> +54 9 11 61594255</li>
-                        <li>Troquelcart@gmail.com</li>
-                        <li>Lunes a Viernes: 8:00 am / 21:00 hs</li>
-                    </ul>
+                
+                <div class="contacto-footer">
 
-                    <div class="imgcont">
-                        <img class="imgl" src="./img/logos/Localidad.png" alt="loc">
-                        <img class="imgt" src="./img/logos/tel.png" alt="tel">
-                        <img class="imgm" src="./img/logos/mail.png" alt="mail">
-                        <img class="imgh" src="./img/logos/horario.png" alt="horarios">
+                    <h3 class="cont">contacto:</h3>
+                    <div class="contactos-img">
+                        <ul class="contacto">
+                            <li>Blas Parera 777, Ituzaingó, Provincia de Buenos Aires</li>
+                            <li> +54 9 11 61594255</li>
+                            <li>Troquelcart@gmail.com</li>
+                            <li>Lunes a Viernes: 8:00 am / 21:00 hs</li>
+                        </ul>
+
+                        <div class="imgcont">
+                            <img class="imgl" src="./img/logos/Localidad.png" alt="loc">
+                            <img class="imgt" src="./img/logos/tel.png" alt="tel">
+                            <img class="imgm" src="./img/logos/mail.png" alt="mail">
+                            <img class="imgh" src="./img/logos/horario.png" alt="horarios">
+                        </div>
+
                     </div>
+
+
                 </div>
+
+
                 <div class="nuestros_clientes">
                     <h3 class="nuestroscli">Nuestros clientes:</h3>
                     <div class="img_clientes">
@@ -130,6 +152,7 @@
                         <img class="img" src="./img/nuestros clientes/cliente5.png" alt="cliente5">
                         <img class="img" src="./img/nuestros clientes/cliente6.png" alt="cliente6">
                 </div>
+
             </nav>    
             
          
@@ -144,6 +167,10 @@
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <script src="./js/main.js"></script>
+
+
 
 </body>
 </html>

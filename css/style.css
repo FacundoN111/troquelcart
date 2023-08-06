@@ -12,14 +12,15 @@
 /* header */
 
 
+
 .menu {
     background-image: -webkit-linear-gradient(105deg, rgb(37, 34, 179) 39%, rgba(51,56,57,1) 96%);
-    padding-top: 6rem;
+    padding-top: 6rem; 
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    align-items: center
-    
+        
 }
 
 .menu_i {
@@ -75,10 +76,29 @@
 }
 
 .logotr {
+ 
     width: 13rem;
     position: absolute;
     left: 32rem;
-    top: .5rem;
+    top: .5rem;  
+    
+}
+
+
+
+/* Boton Menu */ 
+
+
+.open-menu {
+    
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    display: none;
+}
+
+.close-menu {
+    display: none;
 }
 
 
@@ -87,91 +107,101 @@
 /* Inicio */
 
 
-.carousel-inner {
-    height: 15rem;
-    width: 100%;
-}
+.main-inicio {
 
-
-.fondoi {
     background-image: url(../img/fondoinicio.jpg);
-    height: 100vh;
+    height: 140vh;
     background-size: cover;
     background-position: center center;
-    color: rgb(253, 195, 5);
 }
 
-.fondoi h3 {
+.carousel-inicio {
+    width: 50%;
+    order: -1;
+}
+
+.titulo-carousel {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.titulo-inicio {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: larger;
-    
+    color: rgb(253, 195, 5);
+       
 }
 
-.texto1 {
-    padding-left: 3rem;
-    padding-top: 3rem;
+.titulo {
+    font-size: 1.3rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    -webkit-text-stroke: black .03rem;
+    text-shadow: rgb(100, 61, 3) 0 .1rem;
 }
 
-.texto2 {
-    padding-left: 3rem;
-}
+
 
 .card_inicio {
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 11rem;
-    padding-top: 4rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 
 }
 
-.card_inicio h5 {
+.card {
+    width: 20rem;
+    height: 6.2rem;
+    padding: .5rem;
+
+}
+
+.card-titulos {
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
-.card {
-    width: 100%;
+.card-texto{
+    font-size: 0.9rem;
 }
 
 .calidad {
-    padding: .5rem;
     background-color: green; 
-    width: 15rem;
-    }
+}
 
 .puntualidad {
-    padding: .5rem;
     background-color: orange; 
-    width: 15rem;
-    
 }
 
 .envios {
-    padding: .5rem;
     background-color: red; 
-    width: 15rem;
-    
 }
 
 .card_img {
-    padding-left: 2.5rem;
+    padding-top: 8.5rem;
     display: flex;
-    width: 100%;
+    justify-content: center;
+    gap: 8rem;
+    flex-wrap: wrap;
 
 
 }
-.troquei {
-    width: 50%;
-    padding-left: 8rem;
-    padding-top: 4rem;
-}
+
 
 
 
 /* footer */
+
+.contacto-footer {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
 
 
 .contactoi {
@@ -186,45 +216,48 @@
     align-items: center;
 }
 
-.contacto {
-    list-style: none;
-    margin-left: 5rem;
-    line-height: 2rem;
+.contactos-img {
+    display: flex;
+    align-items: center;
+    gap: -2.5rem;
+
 }
 
-.cont {
-    margin: 1rem;
+.contacto {
+    padding-top: 1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem; 
 }
+
 
 .imgcont {
-    position: absolute;
-    left: 5rem;
-    top: 75.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    gap: 0.9rem;
+    order: -1;
+
 }
+
+
 
 .imgl {
     width: 1rem;
-    position: absolute;
-    left: -1.5rem;
-    top: -5.3rem;
-}
+    }
+
 .imgt {
     width: 1rem;
-    position: absolute;
-    left: -1.5rem;
-    top: -3.1rem;
 }
+
 .imgm {
     width: 1.5rem;
-    position: absolute;
-    left: -1.6rem;
-    top: -1.3rem;
 }
+
 .imgh {
     width: 1.2rem;
-    position: absolute;
-    left: -1.5rem;
-    top: 0.8rem;
 }
 
 .nuestros_clientes {
@@ -247,12 +280,137 @@
 }
 
 
+@media screen and (max-width: 940px) {
+    .card_img {
+        padding-top: 3rem;
+    }
+
+    .card_img {
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logotr {
+        left: 24rem;
+        width: 10rem;
+
+    }
+    
+}
+    
+@media screen and (max-width: 900px) {
+
+    .titulo-carousel {
+        flex-direction: column;
+    }
+
+    .titulo {
+        order: -1;
+    }
+
+    .main-inicio {
+        height: 160vh;
+    }
+    
+}
+
+@media screen and (max-width: 730px) {
+
+    .logotr {
+        left: 16.6rem;
+        padding-top: 1rem;
+        width: 11rem;
+    }
+
+    
+
+    .menu_i {
+        position: absolute;
+        background-image: -webkit-linear-gradient(105deg, rgb(37, 34, 179) 39%, rgba(51,56,57,1) 96%);
+        flex-direction: column;
+        padding: 1rem;
+        padding-top: 6rem;
+        width: 30%;
+        height: 30%;
+        transform: translateY(-100%);
+        visibility: hidden;
+        opacity: 0;
+        transition: .2s;
+
+    }
+
+    .menu_i.active {
+        transform: translateY(0);
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+    .close-menu {
+        display: block;
+        position: absolute;
+        font-size: 2rem;
+        width: 1.6rem;
+        height: 1.6rem;
+        cursor: pointer;
+        margin-left: 9.8rem;
+        margin-top: -.1rem;
+        
+    }
+
+    .open-menu {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        margin-left: 1rem;
+        margin-bottom: .5rem;
+        color: white;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 630px) {
+
+    .logotr {
+        left: 11rem;
+        padding-top: 1rem;
+        width: 11rem;
+    }
+
+
+    .menu_i {
+        padding-top: 6rem;
+    }
+
+    .close-menu {
+        margin-left: 8rem;
+    }
+
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .close-menu {
+        margin-left: 7.3rem;
+    }
+
+}
+
+
+
+
+
 
 /* quienes somos */
 
 .main {
     background-color: rgb(178, 214, 250);
-    height: 110vh;
+    height: 140vh;
 }
 
 
@@ -285,6 +443,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5rem;
+    gap: 5rem;
     
 
 
@@ -307,10 +467,35 @@
        
 }   
 
-.imgcont_quienes_somos {
-    top: 62.8rem;
-    
+.contactos-img-quienessomos {
+    gap: 1rem;
 }
+
+.imgcont-quienessomos {
+    padding-top: 1rem;
+    gap: .6rem;
+
+}
+
+.img-clientes-quienessomos {
+   margin-left: 1.5rem; 
+   
+}
+
+@media screen and (max-width: 850px) {
+    .historia_card {
+        flex-direction: column;
+    }
+
+    .troquei {
+        order: -1;
+    }
+
+    .main {
+        height: 120vh;
+    }
+}
+
 
 
 
@@ -328,9 +513,11 @@
 
 .catalogo {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-template-rows: 1fr 1fr;
     grid-auto-rows: 9.5rem;
+    gap: 1rem;
+    padding-right: 4.7rem;
     
 }
 
@@ -386,12 +573,32 @@
 }
 
 
+@media screen and (max-width: 850px){
+.main_productos {
+    height: 200vh;
+}
+.catalogo {
+    grid-template-rows: repeat(4, 1fr);
+}
+
+}
+
+@media screen and (max-width: 850px){
+    .main_productos {
+        height: 390vh;
+    }
+
+    .catalogo {
+        grid-template-rows: repeat(8, 1fr);
+    }
+}
+
 
 
 /* Procesos y servicios */
 
 .main_procesos {
-    height: 143vh;
+    height: 165vh;
 }
 
 .ul_procesos {
@@ -411,43 +618,62 @@
     font-size: 1.2rem;
 }
 
+.img-procesos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "img_pegadora img_pegadora img_troqueladora1"
+    "img_troqueladora2 img_materiales img_fabrica"
+    ;
+    gap: 2rem;
+    padding-right: 5rem;
+    
+    
+}
+
+
+
 .img_pegadora {
-    width: 30rem;
-    margin: 8rem;
-    position: absolute;
-    top: 28rem;
+    width: 100%;
+    padding-left: 5rem;
+    grid-column-start: img_pegadora;
+    grid-column-end: img_pegadora;
+    
 }
 
 .img_troqueladora1 {
-    width: 14rem;
-    margin: 8rem;
-    position: absolute;
-    top: 28rem;
-    left: 32.1rem;
+    width: 100%;
+    height: 88%;
+    grid-column-start: img_troqueladora1;
+    grid-column-end: img_troqueladora1;
+
+
 }
 
 .img_troqueladora2 {
-    width: 17.2rem;
-    margin: 8rem;
-    position: absolute;
-    top: 28rem;
-    left: 48.2rem;
+    width: 100%;
+    height: 88%;
+    grid-column-start: img_troqueladora2;
+    grid-column-end: img_troqueladora2;
+    padding-left: 5rem;
+
+    
 }
 
 .img_materiales {
-    width: 15rem;
-    margin: 8rem;
-    position: absolute;
-    top: 43rem;
-    left: 15rem;
+    width: 100%;
+    height: 88%;
+    grid-column-start: img_materiales;
+    grid-column-end: img_materiales;
+    
+    
 }
 
 .img_fabrica {
-    width: 23.6rem;
-    margin: 8rem;
-    position: absolute;
-    top: 43rem;
-    left: 32rem;
+    width: 100%;
+    height: 88%;
+    grid-column-start: img_fabrica;
+    grid-column-end: img_fabrica;
 
 }
 
@@ -456,111 +682,168 @@
 }
 
 
+@media screen and (max-width: 842px){
+    .ul_procesos {
+        margin-left: 5rem;
+    }
+    .main_procesos {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 735px){
+    .ul_procesos {
+        margin-left: 1rem;
+    }
+
+    .main_procesos {
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 735px){
+    .ul_procesos {
+        width: 25rem;
+        height: 10.5rem;
+        font-size: 1rem;
+    }
+    
+    }
+
+
 
 /* contacto */
+
+.main-contacto {
+    height: 120vh;
+}
 
 .contacto_pa{
     padding: 3rem;
 }
 
+.contacto-h3 {
+    font-size: 1.7rem;
+}
+
 .contacto_c {
-    font-size: 1.2rem;
-    background-color: rgb(158, 186, 236);
-    position: absolute;
+    font-size: 1rem;
     list-style: none;
-    margin-left: 7rem;
-    top: 9rem;
-    line-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem;
+    
+}
+
+.contacto-img-main {
+    background-color: rgb(158, 186, 236);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: -3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+
+.img-contacto-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.9rem;
+    order: -1;
+
 }
 
 .img_l_c,
 .img_t_c,
 .img_m_c,
 .img_h_c {
-    width: 2rem;
-    position: absolute;
-    margin: 13rem;
-    top: 9rem;
+    width: 1.4rem;
 }
- .img_t_c {
-    top: 14.5rem;
- }
+ 
+.img_m_c{
+    width: 2.3rem;}
+    
+ 
+.formulario-completar {
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
- .img_m_c{
-    width: 2.7rem;
-    top: 19rem;
- }
 
- .img_h_c {
-    top: 24.5rem;
- }
+.formulario-contacto {
+    display: flex;
+    gap: 1rem;
+      
 
- .cuadrado_contacto {
-    width: 25rem;
-    height: 27rem;
+}
+
+.contacto-formulario {
+    display: flex;
+    align-items: center;
+    margin-top: 9rem;
+    margin-left: 5rem;
+    gap: 5rem;
+}
+
+.formulario-section {
     background-color: rgb(158, 186, 236);
-    position: absolute;
-    margin-left: 7rem;
-    top: 17.3rem;
- }
-
- .registro {
-    width: 16rem;
-    position: absolute;
+    padding: 1rem;
+    margin-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.8rem;
+    border-radius: 1rem;
     
-  
- }
 
-.nombre {
-    margin: 50%;
-    top: -16.6rem;
-    
-}
-
-.telefono {
-    margin:50%;
-    top: -11.7rem;
-}
-
-.mail {
-    margin: 50%;
-    top: -6.7rem;
 }
 
 .comentario {
-    margin: 75%;
-    top: -36.3rem;
-    height: 11.1rem;
+    height: 7.6rem;
 }
 
 .boton {
-    position: absolute;
-    margin: 50%;
-    top: -1.6rem;
-}
-
-.cuadrado_contacto2 {
-    width: 39.5rem;
-    height: 27rem;
-    background-color: rgb(158, 186, 236);
-    position: absolute;
-    margin-left: 48%;
-    top: 17.3rem;
-}
-
-.formulario {
-    position: absolute;
-    margin: 50%;
-    top: -20rem;
-
-  
-
+    padding: .3rem;
 }
 
 
-.imgcont_contacto{
-    top: 62.8rem;
+@media screen and (max-width: 935px){
+    .contacto-formulario {
+        gap: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 935px){
+    .contacto-formulario {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .contacto-img-main {
+        padding-left: 4rem;
+    }
+
     
+}
+
+@media screen and (max-width: 690px){
+    .contacto-img-main {
+        width: 25rem;
+        padding-left: 8rem;
+        margin-left: -4.5rem;
+    }
+
+    .contacto-formulario {
+        align-items: center;
+    }
+
 }
 
 

@@ -10,11 +10,18 @@
 
 <body>
 
-    <header>
+    <header class="header">
         
-    
+        <img class="logotr" src="../img/Troquelcart.png" alt="troquelcart">
+
+        
         <nav class="menu"> 
-                <ul class="menu_i"> 
+
+            <button class="open-menu" id="open-menu"><i class="fa-solid fa-bars"></i></button>
+            
+                <ul class="menu_i" id="menu_i"> 
+                    <button class="close-menu" id="close-menu"><i class="bi bi-x-circle-fill"></i></button>
+            
                     <li class="menu_item">
                        <a href="../index.html">inicio</a></li>
                     <li class="menu_item">
@@ -32,52 +39,65 @@
                     <img class="logor face" src="../img/logos/Face.png" alt="">
                     <img class="logor what" src="../img/logos/whatsapp_logo.png" alt="">
                     <img class="logor cliente" src="../img/logos/Clientes.png" alt="">
-             </div>
+                </div>
 
                 
         </nav>
          
-        <img class="logotr" src="../img/Troquelcart.png" alt="troquelcart">
-        
         
     </header>
 
-    <main class="main">
+    <main class="main main-contacto">
         
-        <div class="cuadrado_contacto2"></div>
+        
         <img class="wpp" src="../img/logos/whatsapp_logo.png" alt="whatsapp">
         
-        <h3 class="quisom">Contacto</h3>
+        <h3 class="quienes_somos contacto-h3">Contacto</h3>
 
     
+        <div class="contacto-formulario">
+            
+            <div class="contacto-img-main">
+                <nav class="contacto_c">
+                     <ul class="contacto_c contacto_pa contacto-main">
+                        <li>Blas Parera 777, Ituzaingó, Provincia de Buenos Aires</li>
+                        <li>+54 9 11 61594255</li>
+                        <li>Troquelcart@gmail.com</li>
+                        <li>Lunes a Viernes: 8:00 am / 21:00 hs</li>
+                    </ul>
+                </nav>    
+                <div class="img_contacto img-contacto-main">
+                    <img class="img_l_c" src="../img/logos/Localidad.png" alt="loc">
+                    <img class="img_t_c" src="../img/logos/tel.png" alt="tel">
+                    <img class="img_m_c" src="../img/logos/mail.png" alt="mail">
+                    <img class="img_h_c" src="../img/logos/horario.png" alt="horarios">
+                </div>
 
-        <div class="cuadrado_contacto"></div>
-        <nav class="contacto_c">
-             <ul class="contacto_c contacto_pa">
-                <li>Direccion</li>
-                <li>Telefono</li>
-                <li>Mail</li>
-                <li>Horarios</li>
-            </ul>
-        </nav>    
-        <div class="img_contacto">
-            <img class="img_l_c" src="../img/logos/Localidad.png" alt="loc">
-            <img class="img_t_c" src="../img/logos/tel.png" alt="tel">
-            <img class="img_m_c" src="../img/logos/mail.png" alt="mail">
-            <img class="img_h_c" src="../img/logos/horario.png" alt="horarios">
-        </div>
+            </div>
 
    
-        <section>
+            <section class="formulario-section">
         
-            <h3 class="formulario">Completar formulario</h3>
-            <input class="registro nombre" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre y apellido">
-            <input class="registro telefono" type="number" name="nombres" id="nombres" placeholder="Ingrese su telefono">
-            <input class="registro mail" type="mail" name="nombres" id="nombres" placeholder="Ingrese su mail">
-            <input class="registro comentario" type="text" name="nombres" id="nombres" placeholder="Ingrese su comentario">
-            <input class="boton" type="submit" value="Enviar" >
+                <h3 class="formulario">Completar formulario</h3>
+                <div class="formulario-contacto">
+                    
+                    <div class="formulario-completar">
+                        <input class="registro nombre texto-formulario" type="text" name="nombres" id="nombres"          placeholder="Ingrese su nombre y apellido">
+                       <input class="registro telefono texto-formulario" type="number" name="nombres" id="nombres"          placeholder="Ingrese su telefono">
+                        <input class="registro mail texto-formulario" type="mail" name="nombres" id="nombres"            placeholder="Ingrese su mail">
+                    </div>
+                    <div>   
+                        <input class="registro comentario comentario" type="text" name="nombres" id="nombres"          placeholder="        Ingrese su comentario">
+                    </div> 
 
-        </section>
+                  
+                </div>   
+                
+                <input class="boton" type="submit" value="Enviar" >
+
+            </section>
+
+        </div>    
 
     </main>    
 
@@ -85,25 +105,34 @@
 
         
         <nav class="contactoi">
-            <div>
-                <h3 class="cont">contacto:</h3>
-                <ul class="contacto">
-                    <li>Blas Parera 777, Ituzaingó, Provincia de Buenos Aires</li>
-                    <li> +54 9 11 61594255</li>
-                    <li>Troquelcart@gmail.com</li>
-                    <li>Lunes a Viernes: 8:00 am / 21:00 hs</li>
-                </ul>
+            
+            <div class="contacto-footer">
 
-                <div class="imgcont imgcont_contacto">
-                    <img class="imgl" src="../img/logos/Localidad.png" alt="loc">
-                    <img class="imgt" src="../img/logos/tel.png" alt="tel">
-                    <img class="imgm" src="../img/logos/mail.png" alt="mail">
-                    <img class="imgh" src="../img/logos/horario.png" alt="horarios">
+                <h3 class="cont">contacto:</h3>
+                <div class="contactos-img contactos-img-quienessomos">
+                    <ul class="contacto">
+                        <li>Blas Parera 777, Ituzaingó, Provincia de Buenos Aires</li>
+                        <li> +54 9 11 61594255</li>
+                        <li>Troquelcart@gmail.com</li>
+                        <li>Lunes a Viernes: 8:00 am / 21:00 hs</li>
+                    </ul>
+
+                    <div class="imgcont imgcont-quienessomos">
+                        <img class="imgl" src="../img/logos/Localidad.png" alt="loc">
+                        <img class="imgt" src="../img/logos/tel.png" alt="tel">
+                        <img class="imgm" src="../img/logos/mail.png" alt="mail">
+                        <img class="imgh" src="../img/logos/horario.png" alt="horarios">
+                    </div>
+
                 </div>
+
+
             </div>
+
+
             <div class="nuestros_clientes">
                 <h3 class="nuestroscli">Nuestros clientes:</h3>
-                <div class="img_clientes">
+                <div class="img_clientes img-clientes-quienessomos">
                     <img class="img" src="../img/nuestros clientes/cliente1.png" alt="cliente1">
                     <img class="img" src="../img/nuestros clientes/cliente2.png" alt="cliente2">
                     <img class="img" src="../img/nuestros clientes/cliente3.png" alt="cliente3">
@@ -111,10 +140,21 @@
                     <img class="img" src="../img/nuestros clientes/cliente5.png" alt="cliente5">
                     <img class="img" src="../img/nuestros clientes/cliente6.png" alt="cliente6">
             </div>
+
         </nav>    
         
+     
+         
+    
+
     </footer>
-   
+
+    
+    
+    
+
+
+    <script src="../js/main.js"></script>
     
 </body>
 </html>
