@@ -1,0 +1,238 @@
+/* Nav Inicio Footer */
+
+
+@media screen and (max-width: 940px) {
+    .card_img {
+        padding-top: 3rem;
+    }
+
+    .card_img {
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logotr {
+        left: 24rem;
+        width: 10rem;
+
+    }
+    
+}
+    
+@media screen and (max-width: 900px) {
+
+    .titulo-carousel {
+        flex-direction: column;
+    }
+
+    .titulo {
+        order: -1;
+    }
+
+    .main-inicio {
+        height: 160vh;
+    }
+    
+}
+
+@media screen and (max-width: 730px) {
+
+    .logotr {
+        left: 16.6rem;
+        padding-top: 1rem;
+        width: 11rem;
+    }
+
+    
+
+    .menu_i {
+        position: absolute;
+        background-image: -webkit-linear-gradient(105deg, rgb(37, 34, 179) 39%, rgba(51,56,57,1) 96%);
+        flex-direction: column;
+        padding: 1rem;
+        padding-top: 6rem;
+        width: 30%;
+        height: 30%;
+        transform: translateY(-100%);
+        visibility: hidden;
+        opacity: 0;
+        transition: .2s;
+
+    }
+
+    .menu_i.active {
+        transform: translateY(0);
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+    .close-menu {
+        display: block;
+        position: absolute;
+        font-size: 2rem;
+        width: 1.6rem;
+        height: 1.6rem;
+        cursor: pointer;
+        margin-left: 9.8rem;
+        margin-top: -.1rem;
+        
+    }
+
+    .open-menu {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        margin-left: 1rem;
+        margin-bottom: .5rem;
+        color: white;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 630px) {
+
+    .logotr {
+        left: 11rem;
+        padding-top: 1rem;
+        width: 11rem;
+    }
+
+
+    .menu_i {
+        padding-top: 6rem;
+    }
+
+    .close-menu {
+        margin-left: 8rem;
+    }
+
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .close-menu {
+        margin-left: 7.3rem;
+    }
+
+}
+
+
+/* Quienes somos */
+
+@media screen and (max-width: 850px) {
+    .historia_card {
+        flex-direction: column;
+    }
+
+    .troquei {
+        order: -1;
+    }
+
+    .main {
+        height: 120vh;
+    }
+}
+
+
+/* Productos */
+
+
+@media screen and (max-width: 850px){
+    .main_productos {
+        height: 200vh;
+    }
+    .catalogo {
+        grid-template-rows: repeat(4, 1fr);
+    }
+    
+    }
+    
+@media screen and (max-width: 850px){
+    .main_productos {
+        height: 390vh;
+    }
+    
+    .catalogo {
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+
+    }
+
+/* Procesos y Servicios */
+
+
+@media screen and (max-width: 842px){
+    .ul_procesos {
+        margin-left: 5rem;
+    }
+    .main_procesos {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 735px){
+    .ul_procesos {
+        margin-left: 1rem;
+    }
+
+    .main_procesos {
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 735px){
+    .ul_procesos {
+        width: 25rem;
+        height: 10.5rem;
+        font-size: 1rem;
+    }
+    
+    }
+
+
+/* Contacto */
+
+
+@media screen and (max-width: 935px){
+    .contacto-formulario {
+        gap: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 935px){
+    .contacto-formulario {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .contacto-img-main {
+        padding-left: 4rem;
+    }
+
+    
+}
+
+@media screen and (max-width: 690px){
+    .contacto-img-main {
+        width: 25rem;
+        padding-left: 8rem;
+        margin-left: -4.5rem;
+    }
+
+    .contacto-formulario {
+        align-items: center;
+    }
+
+}
+
+

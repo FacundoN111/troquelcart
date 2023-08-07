@@ -1,0 +1,109 @@
+.main-contacto {
+    height: 120vh;
+
+    .wpp {
+        @extend %whatsapp; 
+    }
+
+    .contacto-h3 {
+        font-size: 1.7rem;
+    }
+
+    .contacto-formulario {
+        display: flex;
+        align-items: center;
+        margin-top: 9rem;
+        margin-left: 5rem;
+        gap: 5rem;
+
+        .contacto-img-main {
+            background-color: rgb(158, 186, 236);
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: -3rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            -webkit-animation:slide-in-elliptic-left-fwd .7s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-elliptic-left-fwd .7s cubic-bezier(.25,.46,.45,.94) both;
+            
+
+            .contacto_c {
+                font-size: 1rem;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 2.6rem;
+
+                .contacto_pa{
+                    padding: 3rem;
+                }
+            }
+
+            .img-contacto-main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1.9rem;
+                order: -1;
+
+                .img_l_c,
+                .img_t_c,
+                .img_m_c,
+                .img_h_c {
+                   width: 1.4rem;
+                }
+ 
+                .img_m_c{
+                    width: 2.3rem;
+                }
+            }
+        }
+
+        .formulario-section {
+            background-color: rgb(158, 186, 236);
+            padding: 1rem;
+            margin-right: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3.8rem;
+            border-radius: 1rem;
+            -webkit-animation:slide-in-elliptic-right-bck .8s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-elliptic-right-bck .8s cubic-bezier(.25,.46,.45,.94) both;
+           
+
+            .formulario-contacto {
+                display: flex;
+                gap: 1rem;
+
+                .formulario-completar {
+                    height: 3rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                }
+
+                .comentario {
+                    height: 7.6rem;
+                }
+            }
+
+            .boton {
+                padding: .3rem;
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+ @-webkit-keyframes slide-in-elliptic-left-fwd{0%{-webkit-transform:translateX(-800px) rotateY(30deg) scale(0);transform:translateX(-800px) rotateY(30deg) scale(0);-webkit-transform-origin:-100% 50%;transform-origin:-100% 50%;opacity:0}100%{-webkit-transform:translateX(0) rotateY(0) scale(1);transform:translateX(0) rotateY(0) scale(1);-webkit-transform-origin:1800px 50%;transform-origin:1800px 50%;opacity:1}}@keyframes slide-in-elliptic-left-fwd{0%{-webkit-transform:translateX(-800px) rotateY(30deg) scale(0);transform:translateX(-800px) rotateY(30deg) scale(0);-webkit-transform-origin:-100% 50%;transform-origin:-100% 50%;opacity:0}100%{-webkit-transform:translateX(0) rotateY(0) scale(1);transform:translateX(0) rotateY(0) scale(1);-webkit-transform-origin:1800px 50%;transform-origin:1800px 50%;opacity:1}}
+
+
+
+
+@-webkit-keyframes slide-in-elliptic-right-bck{0%{-webkit-transform:translateX(800px) rotateY(30deg) scale(6.5);transform:translateX(800px) rotateY(30deg) scale(6.5);-webkit-transform-origin:-100% 50%;transform-origin:-100% 50%;opacity:0}100%{-webkit-transform:translateX(0) rotateY(0) scale(1);transform:translateX(0) rotateY(0) scale(1);-webkit-transform-origin:600px 50%;transform-origin:600px 50%;opacity:1}}@keyframes slide-in-elliptic-right-bck{0%{-webkit-transform:translateX(800px) rotateY(30deg) scale(6.5);transform:translateX(800px) rotateY(30deg) scale(6.5);-webkit-transform-origin:-100% 50%;transform-origin:-100% 50%;opacity:0}100%{-webkit-transform:translateX(0) rotateY(0) scale(1);transform:translateX(0) rotateY(0) scale(1);-webkit-transform-origin:600px 50%;transform-origin:600px 50%;opacity:1}}
+
+

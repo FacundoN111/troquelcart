@@ -1,0 +1,75 @@
+.contactoi {
+    background-image: -webkit-linear-gradient(105deg, rgb(37, 34, 179) 39%, rgba(51,56,57,1) 96%);
+    padding-top: 7rem;
+    margin: 0;
+    padding: 0;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .contacto-footer {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        .contactos-img {
+            display: flex;
+            align-items: center;
+            gap: -2.5rem;
+
+            .contacto {
+                padding-top: 1rem;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: .7rem; 
+            }
+
+            .imgcont {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                flex-direction: column;
+                gap: 0.9rem;
+                order: -1;
+
+                .imgl {
+                    width: 1rem;
+                    }
+                
+                .imgt {
+                    width: 1rem;
+                }
+                
+                .imgm {
+                    width: 1.5rem;
+                }
+                
+                .imgh {
+                    width: 1.2rem;
+                }
+            
+            }
+        
+        }
+    }
+
+    .nuestros_clientes {
+        padding-right: 1rem;
+
+        .img_clientes {
+            margin-left: 3rem; 
+            padding-top: 1rem;
+            display: flex;
+            gap: 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .img {
+                width: 2rem;
+            }
+        }
+    }
+}
