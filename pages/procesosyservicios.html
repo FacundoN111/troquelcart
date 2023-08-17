@@ -13,38 +13,47 @@
 <body>
 
     <header class="header">
+
+        <div class="container">
         
-        <img class="logotr" src="../img/Troquelcart.png" alt="troquelcart">
+            <img class="logotr" src="../img/Troquelcart.png" alt="troquelcart"> 
 
         
-        <nav class="menu"> 
+            <nav class="menu"> 
 
-            <button class="open-menu" id="open-menu"><i class="fa-solid fa-bars"></i></button>
-            
+                <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" />
+                <label for="abrir-cerrar" class="toggle-button">
+                    <span class="cerrar" title="Cerrar">Cerrar</span>
+                    <span class="abrir" title="Abrir">Abrir</span>
+                </label>
+        
                 <ul class="menu_i" id="menu_i"> 
-                    <button class="close-menu" id="close-menu"><i class="bi bi-x-circle-fill"></i></button>
-            
-                    <li class="menu_item">
+                    
+        
+                    <li class="menu_item menuPagheader menuiPagheader">
                        <a href="../index.html">inicio</a></li>
-                    <li class="menu_item">
+                    <li class="menu_item menuiPagheader">
                        <a href="../pages/quienessomos.html">quienes somos</a></li>
-                    <li class="menu_item">
+                    <li class="menu_item menuiPagheader">
                         <a href="../pages/productos.html">productos</a></li>
-                    <li class="menu_item">
+                    <li class="menu_item menuiPagheader">
                         <a href="../pages/procesosyservicios.html">procesos y servicios</a></li>
-                    <li class="menu_item">
+                    <li class="menu_item menuiPagheader">
                         <a href="../pages/contacto.html">contacto</a></li>
                 </ul>
 
-                <div class="logos">
-                    <img class="logor inst" src="../img/logos/Insta.png" alt="">
-                    <img class="logor face" src="../img/logos/Face.png" alt="">
-                    <img class="logor what" src="../img/logos/whatsapp_logo.png" alt="">
-                    <img class="logor cliente" src="../img/logos/Clientes.png" alt="">
-                </div>
 
-                
         </nav>
+
+        <div class="logos logosPagheader">
+             <img class="logor inst" src="../img/logos/Insta.png" alt="">
+             <img class="logor face" src="../img/logos/Face.png" alt="">
+             <img class="logor what" src="../img/logos/whatsapp_logo.png" alt="">
+              <img class="logor cliente" src="../img/logos/Clientes.png" alt="">
+        </div>
+
+
+        </div>
          
         
     </header>
@@ -78,7 +87,7 @@
 
     </main>
 
-    <footer>
+    <footer class="footer">
 
         
         <nav class="contactoi">
@@ -87,7 +96,7 @@
 
                 <h3 class="cont">contacto:</h3>
                 <div class="contactos-img contactos-img-quienessomos">
-                    <ul class="contacto">
+                    <ul class="contacto cont-pag-footer">
                         <li>Blas Parera 777, Ituzaingó, Provincia de Buenos Aires</li>
                         <li> +54 9 11 61594255</li>
                         <li>Troquelcart@gmail.com</li>

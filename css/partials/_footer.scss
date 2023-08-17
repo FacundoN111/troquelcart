@@ -1,16 +1,29 @@
-.contactoi {
+.footer {
     background-image: -webkit-linear-gradient(105deg, rgb(37, 34, 179) 39%, rgba(51,56,57,1) 96%);
-    padding-top: 7rem;
-    margin: 0;
-    padding: 0;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    height: 13rem;
+
+    @include MQ780 {
+        height:  14rem;
+    }
+}
+
+
+.contactoi {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    .cont {
+        font-size: 1.5rem;
+
+        @include MQ780 {
+            font-size: 1.2rem;
+        }
+    }
+
     .contacto-footer {
-        padding: 1rem;
+        padding-top: .8rem;
+        padding-left: 3rem;
         display: flex;
         flex-direction: column;
 
@@ -25,6 +38,14 @@
                 display: flex;
                 flex-direction: column;
                 gap: .7rem; 
+
+                @include MQ780 {
+                    font-size: .7rem;
+                }
+            }
+
+            .cont-pag-footer {
+                gap: 1rem;
             }
 
             .imgcont {
@@ -35,20 +56,36 @@
                 gap: 0.9rem;
                 order: -1;
 
+                @include MQ780 {
+                    gap: .4rem;
+                }
+
                 .imgl {
                     width: 1rem;
+                    @include MQ780 {
+                        font-size: .5rem;
+                    }
                     }
                 
                 .imgt {
                     width: 1rem;
+                    @include MQ780 {
+                        font-size: .5rem;
+                    }
                 }
                 
                 .imgm {
                     width: 1.5rem;
+                    @include MQ780 {
+                        font-size: 1rem;
+                    }
                 }
                 
                 .imgh {
                     width: 1.2rem;
+                    @include MQ780 {
+                        font-size: .7rem;
+                    }
                 }
             
             }
@@ -57,7 +94,23 @@
     }
 
     .nuestros_clientes {
-        padding-right: 1rem;
+        padding-top: .3rem;
+        padding-right: 4rem;
+
+        @include MQ780 {
+        padding-right: .5rem;
+        }
+
+        
+        
+
+        .nuestroscli {
+            font-size: 1.5rem;
+
+            @include MQ780 {
+                font-size: 1.2rem;
+            }
+        }
 
         .img_clientes {
             margin-left: 3rem; 
@@ -68,8 +121,18 @@
             grid-template-columns: 1fr 1fr;
 
             .img {
-                width: 2rem;
+                width: 1.7rem;
+                height: 1.7rem;
+
+                @include MQ780 {
+                    width: 1.2rem;
+                    height: 1.2rem;
+                }
             }
         }
     }
+
+     
 }
+
+    

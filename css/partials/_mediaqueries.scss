@@ -1,7 +1,93 @@
-/* Nav Inicio Footer */
+@mixin MQ1980 {
+    @media screen and (max-width: 1980px) {
+        @content;
+    }
+}
 
 
-@media screen and (max-width: 940px) {
+@mixin MQ1050 {
+    @media screen and (max-width: 1050px) {
+        @content;
+    }
+}
+
+
+@mixin MQ1000 {
+    @media screen and (max-width: 1000px) {
+        @content;
+    }
+}
+
+@mixin MQ780 {
+    @media screen and (max-width: 780px) {
+        @content;
+    }
+}
+
+@mixin MQ425 {
+    @media screen and (max-width: 425px) {
+        @content;
+    }
+}
+
+@mixin MQ400 {
+    @media screen and (max-width: 400px) {
+        @content;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media screen and (max-width: 940px) {
     .card_img {
         padding-top: 3rem;
     }
@@ -121,11 +207,11 @@
     }
 
 }
-
+*/
 
 /* Quienes somos */
 
-@media screen and (max-width: 850px) {
+/*@media screen and (max-width: 850px) {
     .historia_card {
         flex-direction: column;
     }
@@ -142,7 +228,7 @@
 
 /* Productos */
 
-
+/*
 @media screen and (max-width: 850px){
     .main_productos {
         height: 200vh;
@@ -166,7 +252,7 @@
     }
 
 /* Procesos y Servicios */
-
+/*
 
 @media screen and (max-width: 842px){
     .ul_procesos {
@@ -199,7 +285,7 @@
 
 /* Contacto */
 
-
+/*
 @media screen and (max-width: 935px){
     .contacto-formulario {
         gap: 1rem;
@@ -234,5 +320,6 @@
     }
 
 }
+*/ 
 
 

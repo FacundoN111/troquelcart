@@ -1,5 +1,11 @@
+
+
 .main_procesos {
     height: 165vh;
+
+    @include MQ1050 {
+        height: 100vh;
+    }
 
     .wpp {
         @extend %whatsapp; 
