@@ -3,6 +3,10 @@
     background-image: -webkit-linear-gradient(105deg, rgb(37, 34, 179) 39%, rgba(51,56,57,1) 96%);
     height: 8.3rem;
 
+    @include MQ400 {
+       height: 7rem;
+    }
+
 
     .container {  
     padding-top: .8rem;
@@ -42,8 +46,11 @@
 
             @include MQ1000 {
                 display: block;
-                
+            }
 
+            @include MQ400 {
+                width: 18px;
+                height: 18px;
             }
 
             
@@ -181,6 +188,11 @@
         grid-area: logo;
         justify-self: flex-end;
         width: 11rem;
+
+        @include MQ400 {
+            width: 8rem;
+            padding-bottom: 1rem;
+        }
     }
 
     .logos {

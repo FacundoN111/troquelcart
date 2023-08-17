@@ -251,6 +251,11 @@
   background-image: -webkit-linear-gradient(105deg, rgb(37, 34, 179) 39%, rgb(51, 56, 57) 96%);
   height: 8.3rem;
 }
+@media screen and (max-width: 400px) {
+  .header {
+    height: 7rem;
+  }
+}
 .header .container {
   padding-top: 0.8rem;
   display: grid;
@@ -283,6 +288,12 @@
 @media screen and (max-width: 1000px) {
   .header .menu .toggle-button {
     display: block;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header .menu .toggle-button {
+    width: 18px;
+    height: 18px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -385,6 +396,12 @@
   grid-area: logo;
   justify-self: flex-end;
   width: 11rem;
+}
+@media screen and (max-width: 400px) {
+  .header .logotr {
+    width: 8rem;
+    padding-bottom: 1rem;
+  }
 }
 .header .logos {
   grid-area: redes;
