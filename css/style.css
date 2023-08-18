@@ -251,6 +251,11 @@
   background-image: -webkit-linear-gradient(105deg, rgb(37, 34, 179) 39%, rgb(51, 56, 57) 96%);
   height: 8.3rem;
 }
+@media screen and (max-width: 780px) {
+  .header {
+    height: 9rem;
+  }
+}
 @media screen and (max-width: 400px) {
   .header {
     height: 7rem;
@@ -285,18 +290,29 @@
   color: rgb(152, 222, 240);
   transition: 0.05s;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 780px) {
   .header .menu .toggle-button {
     display: block;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-top: 0.8rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .header .menu .toggle-button {
+    width: 18px;
+    height: 18px;
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 400px) {
   .header .menu .toggle-button {
     width: 18px;
     height: 18px;
+    margin-top: 0;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 780px) {
   .header .menu #abrir-cerrar:checked ~ .menu_i {
     transform: translateY(0);
     visibility: visible;
@@ -363,9 +379,16 @@
 }
 @media screen and (max-width: 1000px) {
   .header .menu .menu_i {
+    padding: 0;
+    padding-top: 0.4rem;
+    grid-template-areas: "logo  .  ." "menu  menu   redes";
+  }
+}
+@media screen and (max-width: 780px) {
+  .header .menu .menu_i {
     position: absolute;
     background-image: -webkit-linear-gradient(105deg, rgb(37, 34, 179) 39%, rgb(51, 56, 57) 96%);
-    width: 90%;
+    width: 80%;
     height: 5%;
     transform: translateY(-100%);
     visibility: hidden;
@@ -392,9 +415,14 @@
   color: rgb(152, 222, 240);
   transition: 0.05s;
 }
+@media screen and (max-width: 1000px) {
+  .header .menu .menu_i .menu_item a {
+    font-size: 0.76rem;
+  }
+}
 @media screen and (max-width: 780px) {
   .header .menu .menu_i .menu_item a {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -440,6 +468,16 @@
   filter: brightness(150%);
   transition: 0.05s;
 }
+@media screen and (max-width: 780px) {
+  .header .logos {
+    margin-top: 0.8rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header .logos {
+    margin-top: 0;
+  }
+}
 
 .main-inicio {
   background-image: url(../img/fondoinicio.jpg);
@@ -447,19 +485,10 @@
   background-size: cover;
   background-position: center center;
 }
-@media screen and (max-width: 1980px) {
-  .main-inicio {
-    height: 140vh;
-  }
-}
 @media screen and (max-width: 1050px) {
   .main-inicio {
-    height: 115vh;
-  }
-}
-@media screen and (max-width: 400px) {
-  .main-inicio {
-    height: 160vh;
+    height: 100%;
+    padding-bottom: 3rem;
   }
 }
 .main-inicio .titulo-carousel {
@@ -769,7 +798,8 @@
 }
 @media screen and (max-width: 1980px) {
   .main {
-    height: 100vh;
+    height: 100%;
+    padding-bottom: 3rem;
   }
 }
 .main .quienes_somos {
@@ -801,6 +831,17 @@
   margin-top: 5rem;
   gap: 5rem;
 }
+@media screen and (max-width: 1000px) {
+  .main .historia_card {
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main .historia_card {
+    flex-direction: column;
+    padding-top: 0;
+  }
+}
 .main .historia_card .historias {
   background-color: rgb(158, 186, 236);
   width: 18rem;
@@ -814,6 +855,19 @@
 .main .historia_card .troquei {
   width: 30rem;
   margin-bottom: 1rem;
+}
+@media screen and (max-width: 1000px) {
+  .main .historia_card .troquei {
+    width: 25rem;
+    height: 30rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main .historia_card .troquei {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+  }
 }
 
 .contactos-img-quienessomos {
@@ -845,6 +899,21 @@
 .main_productos {
   height: 185vh;
 }
+@media screen and (max-width: 1980px) {
+  .main_productos {
+    height: 230vh;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main_productos {
+    height: 300vh;
+  }
+}
+@media screen and (max-width: 575px) {
+  .main_productos {
+    height: 570vh;
+  }
+}
 .main_productos .productos {
   padding-top: 3.5rem;
   margin-left: 3.5rem;
@@ -856,6 +925,16 @@
   grid-auto-rows: 9.5rem;
   gap: 1rem;
   padding-right: 4.7rem;
+}
+@media screen and (max-width: 1000px) {
+  .main_productos .catalogo {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 575px) {
+  .main_productos .catalogo {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
 }
 .main_productos .catalogo .producto {
   background-color: rgb(158, 186, 236);

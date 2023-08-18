@@ -3,6 +3,12 @@
     background-image: -webkit-linear-gradient(105deg, rgb(37, 34, 179) 39%, rgba(51,56,57,1) 96%);
     height: 8.3rem;
 
+    @include MQ780 {
+        height: 9rem;
+    }
+
+   
+
     @include MQ400 {
        height: 7rem;
     }
@@ -44,20 +50,30 @@
                 transition: .05s;
             }
 
-            @include MQ1000 {
+            @include MQ780 {
                 display: block;
+                width: 1.3rem;
+                height: 1.3rem;
+                margin-top: .8rem;
+            }
+
+            @include MQ575 {
+                width: 18px;
+                height: 18px;
+                margin-top: 0;
             }
 
             @include MQ400 {
                 width: 18px;
                 height: 18px;
+                margin-top: 0;
             }
 
             
         }
 
         #abrir-cerrar:checked ~ .menu_i{
-            @include MQ1000 {
+            @include MQ780 {
                 transform: translateY(0);
                 visibility: visible;
                 opacity: 1;
@@ -138,11 +154,21 @@
             display: flex;
             gap: 1rem;
 
-
             @include MQ1000 {
+                padding: 0;
+                padding-top: .4rem;
+                grid-template-areas:  
+                "logo  .  ."
+                "menu  menu   redes"
+    ;
+
+            } 
+
+
+            @include MQ780 {
                 position: absolute;
                 background-image: -webkit-linear-gradient(105deg, rgb(37, 34, 179) 39%, rgba(51,56,57,1) 96%);
-                width: 90%;
+                width: 80%;
                 height: 5%;
                 transform: translateY(-100%);
                 visibility: hidden;
@@ -152,12 +178,9 @@
                 padding-right: 2rem;
                 align-items: center;
                 justify-content: center;
-                
-
-
-
             }
 
+           
 
 
             .menu_item {
@@ -179,8 +202,12 @@
                         transition: .05s;
                     }
 
+                    @include MQ1000 {
+                        font-size: .76rem;
+                    }
+
                     @include MQ780 {
-                        font-size: .9rem;
+                        font-size: .6rem;
                     }
 
                     @include MQ600 {
@@ -228,6 +255,14 @@
                 filter: brightness(150%);
                 transition: .05s;
             }
+        }
+
+        @include MQ780 {
+            margin-top: .8rem;
+        }
+
+        @include MQ400 {
+            margin-top: 0;
         }
     }
         
