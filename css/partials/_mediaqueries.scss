@@ -24,8 +24,20 @@
     }
 }
 
+@mixin MQ600 {
+    @media screen and (max-width: 600px) {
+        @content;
+    }
+}
+
 @mixin MQ425 {
     @media screen and (max-width: 425px) {
+        @content;
+    }
+}
+
+@mixin MQ440 {
+    @media screen and (max-width: 440px) {
         @content;
     }
 }
@@ -35,6 +47,13 @@
         @content;
     }
 }
+
+@mixin MQ390 {
+    @media screen and (max-width: 390px) {
+        @content;
+    }
+}
+
 
 
 

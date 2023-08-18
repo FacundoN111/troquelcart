@@ -5,11 +5,15 @@
     background-position: center center;
 
     @include MQ1980 {
-        height: 100vh;
+        height: 140vh;
     }
 
     @include MQ1050 {
         height: 115vh;
+    }
+
+    @include MQ400 {
+        height: 160vh;
     }
     
 
@@ -28,6 +32,10 @@
 
         @include MQ1050 {
             flex-direction: column;
+        }
+
+        @include MQ400 {
+            padding-top: 3rem;
         }
 
         

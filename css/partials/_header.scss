@@ -30,8 +30,8 @@
         
         .toggle-button {
             display:block;
-            width:30px;
-            height:30px;
+            width:2rem;
+            height:2rem;
             border:1px solid white;
             position:relative;
             cursor: pointer;
@@ -142,16 +142,16 @@
             @include MQ1000 {
                 position: absolute;
                 background-image: -webkit-linear-gradient(105deg, rgb(37, 34, 179) 39%, rgba(51,56,57,1) 96%);
-                flex-direction: column;
-                padding: 1rem;
-                padding-top: 2rem;
-                width: 20%;
-                height: 22%;
+                width: 90%;
+                height: 5%;
                 transform: translateY(-100%);
                 visibility: hidden;
                 opacity: 0;
                 transition: .2s;
-                order: -1;
+                margin-left: 1rem;
+                padding-right: 2rem;
+                align-items: center;
+                justify-content: center;
                 
 
 
@@ -177,6 +177,23 @@
                     &:hover {
                         color: rgb(152, 222, 240);
                         transition: .05s;
+                    }
+
+                    @include MQ780 {
+                        font-size: .9rem;
+                    }
+
+                    @include MQ600 {
+                        font-size: .6rem;
+                    }
+
+                    @include MQ440 {
+                        font-size: .5rem;
+                    }
+
+                    @include MQ390 {
+                        font-size: .3rem;
+                        height: 5%;
                     }
 
                 }
