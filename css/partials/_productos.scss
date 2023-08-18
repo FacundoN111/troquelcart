@@ -1,19 +1,8 @@
 .main_productos {
-    height: 185vh;
+    height: 100%;
+    padding-bottom: 3rem;
 
-    @include MQ1980 {
-        height: 230vh;
-    }
-
-    @include MQ870 {
-        height: 300vh;
-        
-    }
-
-    @include MQ575 {
-        height: 570vh;
-    }
-
+    
     .wpp {
         @extend %whatsapp; 
     }

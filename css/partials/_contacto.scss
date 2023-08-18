@@ -16,11 +16,10 @@
 }
 
 .main-contacto {
-    height: 120vh;
+    height: 100%;
+    padding-bottom: 4rem;
 
-    @include MQ1050 {
-        height: 80vh;
-    }
+    
 
     .wpp {
         @extend %whatsapp; 
@@ -40,8 +39,12 @@
         -webkit-animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	    animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
+
         @include MQ1000 {
-            padding-top: 4rem;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           
         }
 
         .contacto-img-main {
@@ -51,8 +54,17 @@
             justify-content: end;
             gap: -3rem;
             padding: 1rem;
+            padding-right: 0;
             border-radius: 1rem;
-            
+
+            @include MQ1000 {
+                width: 90%;
+                justify-content: center;
+                
+            }
+
+                        
+                
             
 
             .contacto_c {
@@ -62,9 +74,20 @@
                 flex-direction: column;
                 gap: 2.6rem;
 
+            
+
                 .contacto_pa{
                     padding: 3rem;
                 }
+
+                @include MQ440 {
+                    font-size: .8rem;
+                    padding-right: 2rem;
+                    
+                }
+
+
+                
             }
 
             .img-contacto-main {
@@ -74,15 +97,30 @@
                 gap: 1.9rem;
                 order: -1;
 
+                @include MQ440 {
+                    gap: 2.1rem;
+                    margin-left: 4rem;
+                }
+
                 .img_l_c,
                 .img_t_c,
                 .img_m_c,
                 .img_h_c {
                    width: 1.4rem;
+
+                   @include MQ440 {
+                    width: 1.3rem;
                 }
+                }
+
+                
  
                 .img_m_c{
                     width: 2.3rem;
+
+                    @include MQ440 {
+                        width: 1.9rem;
+                    }
                 }
             }
         }
@@ -96,6 +134,14 @@
             align-items: center;
             gap: 3.8rem;
             border-radius: 1rem;
+
+            @include MQ1000 {
+                width: 90%;
+                margin: 0;
+                justify-content: center;
+            }
+
+            
             
            
 
@@ -103,15 +149,39 @@
                 display: flex;
                 gap: 1rem;
 
+                @include MQ575 {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 7rem;
+                    
+                   
+                }
+
+                
                 .formulario-completar {
                     height: 3rem;
                     display: flex;
                     flex-direction: column;
                     gap: 2rem;
+
+                    @include MQ1000 {
+                        width: 17rem;
+                    }
+
+                    @include MQ600 {
+                        width: 15rem;
+                    }
+
+                    @include MQ575 {
+                        width: 10rem;
+                    }
                 }
 
                 .comentario {
                     height: 7.6rem;
+                    resize:none;
+	                white-space: clip;
                 }
             }
 

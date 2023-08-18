@@ -1,13 +1,11 @@
 
 .header {
     background-image: -webkit-linear-gradient(105deg, rgb(37, 34, 179) 39%, rgba(51,56,57,1) 96%);
-    height: 8.3rem;
+    height: 8rem;
 
     @include MQ780 {
         height: 9rem;
     }
-
-   
 
     @include MQ400 {
        height: 7rem;
@@ -54,13 +52,14 @@
                 display: block;
                 width: 1.3rem;
                 height: 1.3rem;
-                margin-top: .8rem;
+                margin-top: 1.4rem;
             }
 
             @include MQ575 {
                 width: 18px;
                 height: 18px;
-                margin-top: 0;
+                
+                
             }
 
             @include MQ400 {
@@ -180,7 +179,7 @@
                 justify-content: center;
             }
 
-           
+                       
 
 
             .menu_item {
@@ -210,12 +209,12 @@
                         font-size: .6rem;
                     }
 
-                    @include MQ600 {
-                        font-size: .6rem;
+                    @include MQ480 {
+                        font-size: .5rem;
                     }
 
-                    @include MQ440 {
-                        font-size: .5rem;
+                    @include MQ420 {
+                        font-size: .4rem;
                     }
 
                     @include MQ390 {
@@ -251,6 +250,10 @@
         .logor {
             width: 1.1rem;
 
+            @include MQ400 {
+                width: .9rem;
+            }
+
             &:hover {
                 filter: brightness(150%);
                 transition: .05s;
@@ -258,14 +261,46 @@
         }
 
         @include MQ780 {
-            margin-top: .8rem;
+            margin-top: 1.5rem;
+            padding-left: 3rem;
         }
 
         @include MQ400 {
-            margin-top: 0;
+            margin-top: .2rem;
+
+            
         }
     }
+
+    .logosPagheader {
+        @include MQ780 {
+            margin-top: .8rem;
+        }
+
+        @include MQ600 {
+            margin-top: 5.7rem;
+            position: absolute;
+        }
+        @include MQ400 {
+            margin-top: 4.2rem;
+
+            
+        }
+    }
+
+      
+
+    .menuPagheader {
+        @include MQ575 {
+            margin-left: 0;
+            padding-left: 0;
+            justify-self: end;
+            
+        }
+
+    }
         
+    
 
 }
 

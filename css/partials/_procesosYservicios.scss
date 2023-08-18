@@ -1,11 +1,10 @@
 
 
 .main_procesos {
-    height: 165vh;
+    height: 100%;
+    padding-bottom: 3rem;
 
-    @include MQ1050 {
-        height: 100vh;
-    }
+    
 
     .wpp {
         @extend %whatsapp; 
@@ -17,22 +16,58 @@
         display: flex;
         flex-direction: column;
 
+        @include MQ600 {
+            justify-content: center;
+            align-items: center;
+        }
+
         .ul_procesos {
-            width: 35rem;
-            height: 10rem;
+            width: 55%;
+            height: 30%;
             margin-left: 25%;
             margin-top: 3rem;
             font-size: 1.2rem;
             padding: 2rem;
+            padding-left: 3rem;
             background-color: rgb(158, 186, 236);
             border-radius: 1rem;
-        }
+
+            @include MQ760 {
+                margin-left: 18%;
+            }
+
+            @include MQ600 {
+                margin-left: 0;
+                font-size: 1.2rem;
+            }
+
+            @include MQ440 {
+                font-size: 1rem;
+            }
+
+            }
+
     }
 
     .titulo2_procesos {
         top:27rem;
         margin: 5rem;
         font-size: 1.2rem;
+
+        @include MQ600 {
+            margin-left: 40%;
+        }
+
+        @include MQ550 {
+            margin-top: 5rem;
+            margin-bottom: 0;
+        }
+
+        @include MQ440 {
+            margin-left: 50%;
+        }
+        
+            
     }
 
     .img-procesos {
@@ -45,36 +80,107 @@
         gap: 2rem;
         padding-right: 5rem;
 
+        @include MQ600 {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+        "img_pegadora img_pegadora"
+        "img_troqueladora1 img_troqueladora2"
+        "img_materiales img_fabrica"
+        ;
+        justify-content: center;
+        align-items: center;
+        padding-right: 4rem;
+        padding-left: 6.5rem;
+        gap: .5rem;
+        }
+
+        @include MQ550 {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-areas: none;
+            padding-left: 0;
+            padding-right: 5.7rem;
+            gap: 3rem;
+        }
+
+        @include MQ480 {
+            padding-right: 3.7rem;
+        }
+
         .img_pegadora {
             width: 100%;
             padding-left: 5rem;
             grid-column-start: img_pegadora;
             grid-column-end: img_pegadora;
+
+            @include MQ600 {
+                padding-left: 0;
+            }
+
+            @include MQ550 {
+                height: 10rem;
+                width: 18rem;
+                padding-left: 0;
+            }
         }
         
         .img_troqueladora1 {
             @include tamaño(100%, 88%);
             grid-column-start: img_troqueladora1;
             grid-column-end: img_troqueladora1;
+
+            @include MQ550 {
+                height: 15rem;
+                width: 18rem;
+            }
         }
+        
         
         .img_troqueladora2 {
             @include tamaño(100%, 88%);
             grid-column-start: img_troqueladora2;
             grid-column-end: img_troqueladora2;
             padding-left: 5rem;
+
+            @include MQ600 {
+                padding-left:  2rem;
+                width: 15rem;
+            }
+
+            @include MQ550 {
+                height: 15rem;
+                width: 18rem;
+                padding-left: 0;
+            }
         }
         
         .img_materiales {
             @include tamaño(100%, 88%);
             grid-column-start: img_materiales;
             grid-column-end: img_materiales;
+
+            @include MQ550 {
+                height: 15rem;
+                width: 18rem;
+            }
         }
         
         .img_fabrica {
             @include tamaño(100%, 88%);
             grid-column-start: img_fabrica;
             grid-column-end: img_fabrica;
+
+            @include MQ600 {
+                padding-left:  2rem;
+                width: 15rem;
+            }
+
+            @include MQ550 {
+                height: 15rem;
+                width: 18rem;
+                padding-left: 0;
+            }
         }
 
     }

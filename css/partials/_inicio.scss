@@ -1,13 +1,11 @@
 .main-inicio {
     background-image: url(../img/fondoinicio.jpg);
-    height: 140vh;
+    height: 100%;
+    padding-bottom: 3rem;
     background-size: cover;
     background-position: center center;
 
-    @include MQ1050 {
-        height: 100%;
-        padding-bottom: 3rem;
-    }
+   
 
     .wpp {
         @extend %whatsapp; 

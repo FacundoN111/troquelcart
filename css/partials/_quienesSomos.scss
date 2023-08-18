@@ -1,12 +1,10 @@
 .main {
     background-color: rgb(178, 214, 250);
-    height: 140vh;
+    height: 100%;
+    padding-bottom: 3rem;
+    
 
-    @include MQ1980 {
-      height: 100%;
-      padding-bottom: 3rem;
-    }
-
+    
     .wpp {
         @extend %whatsapp; 
     }
@@ -16,6 +14,12 @@
         padding-left: 4.3rem;
         display: flex;
         flex-direction: column;
+
+        @include MQ600 {
+          justify-content: center;
+          align-items: center;
+          padding-left: 0;
+        }
         
         
 
@@ -24,6 +28,11 @@
             padding-bottom: 1rem;
             -webkit-animation: tracking-in-expand-fwd .8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand-fwd .8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
+          @include MQ600 {
+            justify-content: center;
+            align-self: center;
+          }
         }
         
         .texto {
@@ -36,6 +45,14 @@
             -webkit-text-stroke: .03rem black;
             -webkit-animation: tracking-in-expand-fwd .8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand-fwd .8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
+          @include MQ600 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            justify-content: center;
+            align-self: center;
+            text-align: center;
+          }
         }
     }
 
