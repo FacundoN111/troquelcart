@@ -232,10 +232,20 @@
         justify-self: flex-end;
         width: 11rem;
 
+       
         @include MQ400 {
             width: 8rem;
             padding-bottom: 1rem;
         }
+    }
+
+    .logotrPagHeader {
+
+        @include MQ780 {
+            justify-self: flex-start;
+            padding-left: 1rem;
+        }
+
     }
 
     .logos {
@@ -275,6 +285,7 @@
     .logosPagheader {
         @include MQ780 {
             margin-top: .8rem;
+            padding-right: 1rem;
         }
 
         @include MQ600 {

@@ -25,7 +25,32 @@
         }
 
         @include MQ575 {
+            grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            padding-right: 0;
+            margin-left: 20%;
+        }
+
+        @include MQ550 {
+            margin-left: 17%;
+        }
+
+        @include MQ480 {
+            margin-left: 15%;
+        }
+
+        @include MQ440 {
+            margin-left: 13%;
+        }
+
+        @include MQ400 {
+            margin-left: 5.5%;
+        }
+
+        @include MQ390 {
+            margin-left: 3.5%;
         }
 
         .producto {

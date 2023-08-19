@@ -17,10 +17,12 @@
         flex-direction: column;
 
         @include MQ600 {
+            padding-left: 0;
             justify-content: center;
             align-items: center;
         }
 
+        
         .ul_procesos {
             width: 55%;
             height: 30%;
@@ -53,21 +55,15 @@
         top:27rem;
         margin: 5rem;
         font-size: 1.2rem;
+                   
+    }
 
-        @include MQ600 {
-            margin-left: 40%;
-        }
-
-        @include MQ550 {
-            margin-top: 5rem;
-            margin-bottom: 0;
-        }
-
-        @include MQ440 {
-            margin-left: 50%;
-        }
-        
-            
+    .img-equipos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
     }
 
     .img-procesos {
@@ -123,6 +119,10 @@
                 width: 18rem;
                 padding-left: 0;
             }
+
+            @include MQ400 {
+                width: 16rem;
+            }
         }
         
         .img_troqueladora1 {
@@ -133,6 +133,10 @@
             @include MQ550 {
                 height: 15rem;
                 width: 18rem;
+            }
+
+            @include MQ400 {
+                width: 16rem;
             }
         }
         
@@ -153,6 +157,10 @@
                 width: 18rem;
                 padding-left: 0;
             }
+
+            @include MQ400 {
+                width: 16rem;
+            }
         }
         
         .img_materiales {
@@ -163,6 +171,10 @@
             @include MQ550 {
                 height: 15rem;
                 width: 18rem;
+            }
+
+            @include MQ400 {
+                width: 16rem;
             }
         }
         
@@ -180,6 +192,10 @@
                 height: 15rem;
                 width: 18rem;
                 padding-left: 0;
+            }
+
+            @include MQ400 {
+                width: 16rem;
             }
         }
 

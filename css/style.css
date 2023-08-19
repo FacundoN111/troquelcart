@@ -451,6 +451,12 @@
     padding-bottom: 1rem;
   }
 }
+@media screen and (max-width: 780px) {
+  .header .logotrPagHeader {
+    justify-self: flex-start;
+    padding-left: 1rem;
+  }
+}
 .header .logos {
   grid-area: redes;
   display: flex;
@@ -486,6 +492,7 @@
 @media screen and (max-width: 780px) {
   .header .logosPagheader {
     margin-top: 0.8rem;
+    padding-right: 1rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -959,7 +966,37 @@
 }
 @media screen and (max-width: 575px) {
   .main_productos .catalogo {
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+    margin-left: 20%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main_productos .catalogo {
+    margin-left: 17%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main_productos .catalogo {
+    margin-left: 15%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .main_productos .catalogo {
+    margin-left: 13%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main_productos .catalogo {
+    margin-left: 5.5%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .main_productos .catalogo {
+    margin-left: 3.5%;
   }
 }
 .main_productos .catalogo .producto {
@@ -1061,6 +1098,7 @@
 }
 @media screen and (max-width: 600px) {
   .main_procesos .quienes_somos {
+    padding-left: 0;
     justify-content: center;
     align-items: center;
   }
@@ -1097,21 +1135,12 @@
   margin: 5rem;
   font-size: 1.2rem;
 }
-@media screen and (max-width: 600px) {
-  .main_procesos .titulo2_procesos {
-    margin-left: 40%;
-  }
-}
-@media screen and (max-width: 550px) {
-  .main_procesos .titulo2_procesos {
-    margin-top: 5rem;
-    margin-bottom: 0;
-  }
-}
-@media screen and (max-width: 440px) {
-  .main_procesos .titulo2_procesos {
-    margin-left: 50%;
-  }
+.main_procesos .img-equipos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 .main_procesos .img-procesos {
   display: grid;
@@ -1165,6 +1194,11 @@
     padding-left: 0;
   }
 }
+@media screen and (max-width: 400px) {
+  .main_procesos .img-procesos .img_pegadora {
+    width: 16rem;
+  }
+}
 .main_procesos .img-procesos .img_troqueladora1 {
   width: 100%;
   height: 88%;
@@ -1175,6 +1209,11 @@
   .main_procesos .img-procesos .img_troqueladora1 {
     height: 15rem;
     width: 18rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main_procesos .img-procesos .img_troqueladora1 {
+    width: 16rem;
   }
 }
 .main_procesos .img-procesos .img_troqueladora2 {
@@ -1197,6 +1236,11 @@
     padding-left: 0;
   }
 }
+@media screen and (max-width: 400px) {
+  .main_procesos .img-procesos .img_troqueladora2 {
+    width: 16rem;
+  }
+}
 .main_procesos .img-procesos .img_materiales {
   width: 100%;
   height: 88%;
@@ -1207,6 +1251,11 @@
   .main_procesos .img-procesos .img_materiales {
     height: 15rem;
     width: 18rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main_procesos .img-procesos .img_materiales {
+    width: 16rem;
   }
 }
 .main_procesos .img-procesos .img_fabrica {
@@ -1226,6 +1275,11 @@
     height: 15rem;
     width: 18rem;
     padding-left: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main_procesos .img-procesos .img_fabrica {
+    width: 16rem;
   }
 }
 
@@ -1263,6 +1317,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 0;
   }
 }
 .main-contacto .contacto-formulario .contacto-img-main {
